@@ -25,7 +25,8 @@ foreach ($session->getTrips() as $trip) {
         ->setDtEnd($trip->arrivalDate)
         ->setSummary(
             $trip->departureStation->name.' - '.$trip->arrivalStation->name
-        );
+        )
+        ->setUseTimezone(true);
     $vCalendar->addComponent($vEvent);
 }
 header('Content-Type: text/calendar');
