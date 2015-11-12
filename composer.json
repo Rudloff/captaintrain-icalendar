@@ -1,0 +1,26 @@
+{
+    "name": "rudloff/captaintrain-icalendar",
+    "description": "Export an iCalendar feed with all your Captain Train trips",
+    "license": "GPL-3.0",
+    "require": {
+        "rudloff/captaintrain-php-api": "~0.1.0",
+        "captaintrain/stations": "dev-1de2a9f63ac97560ed5782d71650bf4b869d0231"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "~2.7.5"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "captaintrain/stations",
+                "version": "dev-1de2a9f63ac97560ed5782d71650bf4b869d0231",
+                "source": {
+                    "url": "https://github.com/captaintrain/stations.git",
+                    "type": "git",
+                    "reference": "1de2a9f63ac97560ed5782d71650bf4b869d0231"
+                }
+            }
+        }
+    ]
+}
