@@ -33,4 +33,6 @@ if (isset($_GET['token']) && $_GET['token'] == $config->token) {
     }
     header('Content-Type: text/calendar');
     echo $vCalendar->render();
+} else {
+    http_response_code(403);
 }
