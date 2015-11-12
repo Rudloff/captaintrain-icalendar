@@ -4,7 +4,9 @@
     "license": "GPL-3.0",
     "require": {
         "rudloff/captaintrain-php-api": "~0.1.0",
-        "captaintrain/stations": "dev-1de2a9f63ac97560ed5782d71650bf4b869d0231"
+        "captaintrain/stations": "dev-1de2a9f63ac97560ed5782d71650bf4b869d0231",
+        "symfony/yaml": "~2.7.6",
+        "eluceo/ical": "~0.8.0"
     },
     "require-dev": {
         "symfony/var-dumper": "~2.7.5"
@@ -22,5 +24,15 @@
                 }
             }
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "CaptainTrainIcalendar\\": "classes/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "ln -sfn ../../ ./vendor/rudloff/captaintrain-php-api/vendor"
+        ]
+    }
 }
