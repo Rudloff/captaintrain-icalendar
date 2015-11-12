@@ -27,8 +27,7 @@ foreach ($session->getTrips() as $trip) {
             $trip->departureStation->name.' - '.$trip->arrivalStation->name
         )
         ->setUseTimezone(true)
-        ->setUrl('https://www.captaintrain.com/tickets')
-        ->setIsPrivate(true);
+        ->setUrl('https://www.captaintrain.com/tickets');
     $vCalendar->addComponent($vEvent);
 }
 header('Content-Type: text/calendar');
