@@ -29,6 +29,7 @@ Class Config
 
     public $email = '';
     public $password = '';
+    public $token = '';
 
     /**
      * Config constructor
