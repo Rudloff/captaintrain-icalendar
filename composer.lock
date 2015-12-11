@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "36d93075023a0b8feebcdd4e67140df5",
-    "content-hash": "638e9334d1c15a9851413ba50ec47038",
+    "hash": "d73140f81aab68786320141b40506e79",
+    "content-hash": "88f866dd3028d06bb707344b253d0db1",
     "packages": [
         {
             "name": "captaintrain/stations",
@@ -293,25 +293,25 @@
         },
         {
             "name": "rudloff/captaintrain-php-api",
-            "version": "0.1.0",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/captaintrain-php-api.git",
-                "reference": "1cdc402df318c5d5f26ba5449bc2bd66e4b02429"
+                "reference": "004d7f0c76197e86f6519ff5ef6e5b0d664a3320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/captaintrain-php-api/zipball/1cdc402df318c5d5f26ba5449bc2bd66e4b02429",
-                "reference": "1cdc402df318c5d5f26ba5449bc2bd66e4b02429",
+                "url": "https://api.github.com/repos/Rudloff/captaintrain-php-api/zipball/004d7f0c76197e86f6519ff5ef6e5b0d664a3320",
+                "reference": "004d7f0c76197e86f6519ff5ef6e5b0d664a3320",
                 "shasum": ""
             },
             "require": {
                 "captaintrain/stations": "dev-1de2a9f63ac97560ed5782d71650bf4b869d0231",
                 "guzzlehttp/guzzle": "~6.1.0",
-                "symfony/console": "~2.7.5"
+                "symfony/console": "~3.0.0"
             },
             "require-dev": {
-                "symfony/var-dumper": "~2.7.5"
+                "symfony/var-dumper": "~3.0.0"
             },
             "type": "library",
             "autoload": {
@@ -324,29 +324,30 @@
                 "LGPL-3.0"
             ],
             "description": "Small library that helps you build applications that communicate with the Captain Train API",
-            "time": "2015-11-12 21:06:06"
+            "time": "2015-12-05 21:03:51"
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.7",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750"
+                "reference": "175871ca8d1ef16ff8d8cac395a1c73afa8d0e63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/16bb1cb86df43c90931df65f529e7ebd79636750",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750",
+                "url": "https://api.github.com/repos/symfony/console/zipball/175871ca8d1ef16ff8d8cac395a1c73afa8d0e63",
+                "reference": "175871ca8d1ef16ff8d8cac395a1c73afa8d0e63",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1",
-                "symfony/process": "~2.1"
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -356,7 +357,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -383,59 +384,8 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-18 09:54:26"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
-                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
             "time": "2015-11-30 12:36:17"
-        }
-    ],
-    "packages-dev": [
+        },
         {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.0.0",
@@ -492,6 +442,57 @@
             ],
             "time": "2015-11-04 20:28:58"
         },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
+                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-11-30 12:36:17"
+        }
+    ],
+    "packages-dev": [
         {
             "name": "symfony/var-dumper",
             "version": "v3.0.0",
@@ -559,6 +560,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "rudloff/captaintrain-php-api": 20,
         "captaintrain/stations": 20
     },
     "prefer-stable": false,
